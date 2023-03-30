@@ -1,4 +1,7 @@
 ; epcx - version 4.0 2023-03-28 - Chris Brown
+; This script defines a new Tarski command "epc" that provides a better "black box"
+; command for existential quantifier elimination.
+; Use like: (epc [ex x[x^2 + b x + c = 0]])
 ; IMPORTANT! Only call epc on a prenex, existentially quantified formula.
 ;            I.e. when you call (epc F), the formula F should look like
 ;                 [ex x1,...,xn[ F ] ], where F is quantifier-free.
