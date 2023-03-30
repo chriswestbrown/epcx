@@ -2,7 +2,7 @@
 
 epcx is a script for the Tarski system.  Tarski itself (as of version 1.32)
 does not provide a good "black-box" quantifier elimination command.  It
-provides tools, like qepcad-api-cal, qfr, clear-assignments, normalize, etc,
+provides tools, like qepcad-api-call, qfr, clear-assignments, normalize, etc,
 but there is no overarching command that takes a quantified formula as
 input and makes intelligent decisions about how to combine these commands to
 efficiently produce a quantifier-free equivalent.  This file defines the
