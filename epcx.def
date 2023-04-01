@@ -21,12 +21,10 @@
       F
       (if (equal? (length (get-free-vars F)) 0)
         (qepcad-api-call F t)
-        ((lambda () ; let hack
-           (def S (process (exclose F)))
-           (if (equal? S [false])
+	(if (equal? (process (exclose F)) [false])
              [false]
              (qepcad-api-call F t)
-	   )))))))
+	   )))))
 
 ; (qepcad-simplify F t) Qepcad simplification
 (def qepcad-simplify (lambda (F t) (qepcad-api-call F t)))
